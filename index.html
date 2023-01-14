@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container-fluid py-3 border-bottom">
+        <div class="container">
+            <a href="." class="link-dark text-decoration-none h4">Unix Timestamp Converter</a>
+        </div>
+    </header>
+    <main class="bg-light py-3">
+        <section class="container">
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h5 class="mb-0">Current Unix Timestamp</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 id="current_timestamp" class="fw-normal">1671719232</h4>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-6 col-md-3 fw-semibold">Date/Time</div>
+                                <div id="date-time" class="col-8 col-md-9">22 December, 2022</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3 fw-semibold">Timestamp</div>
+                                <div id="timestamp" class="col-8 col-md-9">1671719232</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3 fw-semibold">ISO 8601</div>
+                                <div id="iso-time" class="col-8 col-md-9">2022-12-22T14:27:12+0000</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3 fw-semibold">RFC 2822</div>
+                                <div id="rfc-time" class="col-8 col-md-9">Thu, 22 Dec 2022 14:27:12 +0000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-3">
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h5 class="mb-0">Timestamp Generator</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-5">
+                            <p>Generate a timestamp from date</p>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="year" class="form-label">Year</label>
+                                    <input type="number" name="" id="year" class="form-control"
+                                        placeholder="yyyy (eg. 2016)">
+                                </div>
+                                <div class="col">
+                                    <label for="month" class="form-label">Month</label>
+                                    <input type="number" name="" id="month" class="form-control"
+                                        placeholder="mm (eg. 12)">
+                                </div>
+                                <div class="col">
+                                    <label for="day" class="form-label">Day</label>
+                                    <input type="number" name="" id="day" class="form-control"
+                                        placeholder="dd (eg. 31)">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="year" class="form-label">Year</label>
+                                    <input type="number" name="" id="year" class="form-control"
+                                        placeholder="yyyy (eg. 2016)">
+                                </div>
+                                <div class="col">
+                                    <label for="month" class="form-label">Month</label>
+                                    <input type="number" name="" id="month" class="form-control"
+                                        placeholder="mm (eg. 12)">
+                                </div>
+                                <div class="col">
+                                    <label for="day" class="form-label">Day</label>
+                                    <input type="number" name="" id="day" class="form-control"
+                                        placeholder="dd (eg. 31)">
+                                </div>
+                            </div>
+                            <button id="generate_timestamp_btn" class="btn btn-dark mb-3 mb-md-0">Generate
+                                Timestamp</button>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>Generate a date from timestamp</p>
+                            <div class="mb-3">
+                                <label for="timestamp_input" class="form-label">Timestamp</label>
+                                <input type="number" name="" id="timestamp_input" class="form-control w-auto"
+                                    placeholder="1671719232">
+                            </div>
+                            <button id="generate_time_btn" class="btn btn-dark">Generate Time</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="container mt-3">
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h5>What is a Unix Timestamp?</h5>
+                </div>
+                <div class="card-body">
+                    <p>The Unix Timestamp is the number of seconds since January 1st, 1970(UTC).</p>
+                    <p>Share if you like this site</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+
+</section>
+</body>
+</html>
